@@ -189,4 +189,12 @@ export class AuthService {
       throw new InternalServerErrorException('Failed to handle Google login.');
     }
   }
+  
+  /**
+   * Logs out a user.
+   * @returns A message indicating the user has been logged out.
+   */
+  logout() {
+    return 'Logged out successfully';
+  }
 }
